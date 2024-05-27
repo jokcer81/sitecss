@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обучение CSS</title>
+  <style>
+    body {
+      width: 1000px;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+    }
+    .logo-left {
+      width: 80px;
+      height: 80px;
+      background-image: url('logo-left.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .logo-right {
+      width: 80px;
+      height: 80px;
+      background-image: url('logo-right.png');
+      background-size: cover;
+      background-position: center;
+    }
+    main {
+      padding: 20px;
+      background-color: #fff;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    p.description {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #666;
+    }
+    .example-container {
+      margin-bottom: 20px;
+    }
+    .example-container pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+    }
+    .example-container code {
+      display: block;
+      overflow-x: auto;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+  <script>
+    window.klipse_settings = {
+      selector_example: '.language-example', // селектор для примеров
+    };
+  </script>
+  <script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-left"></div>
+    <h1>Обучение CSS</h1>
+    <div class="logo-right"></div>
+  </header>
+  <main>
+    <p>CSS (Cascading Style Sheets) - это язык стилей, который используется для оформления веб-страниц. Он позволяет задавать цвет, шрифт, размер, отступы и другие свойства элементов HTML.</p>
+    <p>В этом учебнике вы узнаете, как использовать CSS для создания красивых и удобных в использовании веб-страниц.</p>
+    <h2>Содержание</h2>
+   <ul>
+      <li><a href="#">Введение в CSS</a></li>
+      <li><a href="#">Селекторы CSS</a></li>
+      <li><a href="#">Свойства CSS</a></li>
+      <li><a href="#">Псевдоклассы и псевдоэлементы</a></li>
+      <li><a href="#">Флексбоксы</a></li>
+      <li><a href="#">Гриды</a></li>
+      <li><a href="#">Анимации и трансформации</a></li>
+    </ul>
+    <h2>Селекторы CSS</h2>
+    <p class="description">Селекторы CSS - это инструмент, с помощью которого можно выбрать элементы HTML, чтобы применить к ним стили.</p>
+    <div class="example-container">
+      <h3>Примеры селекторов:</h3>
+      <pre><code class="language-css">p { color: red; }</code></pre>
+      <p>- селектор элемента, выбирает все элементы &lt;p&gt; и задает им цвет текста красный.</p>
+      <pre><code class="language-css">#myId { background-color: blue; }</code></pre>
+      <p>- селектор идентификатора, выбирает элемент с идентификатором "myId" и задает ему фон синий.</p>
+      <pre><code class="language-css">.myClass { font-size: 16px; }</code></pre>
+      <p>- селектор класса, выбирает все элементы с классом "myClass" и задает им размер шрифта 16px.</p>
+      <pre><code class="language-css">a[href="https://www.example.com"] { color: green; }</code></pre>
+      <p>- селектор атрибута, выбирает все ссылки с атрибутом "href" со значением "https://www.example.com" и задает им цвет текста зеленый.</p>
+    </div>
+  </main>
+</body>
+</html>
